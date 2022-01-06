@@ -1,0 +1,28 @@
+Ejercicio 6:
+
+1- Funcionalidad de calculo: verificar que se realicen los calculos. Ej: Ejecutar la función.
+sumar(2,“101”, “11”, ) => “1000",
+sumar(16,”a2”,“9”) => “ab”,
+sumar(10,”10”, “33”) => ”43”
+
+2- Validación datos ingresados (parametro 1): Verificar que el parametro 1 no admite valores fuera del rango [2,25]
+Ej sumar(27,"10","2"); --> Debe dar: "Error: La base ingresada en el argumento 1 debe estar en el rango de 2 a 25"
+
+3- Validación de simbolos: Verificar que no se pueden ingresar simbolos a ninguno de los 3 parametros.
+Ej sumar(23,"10$","2") -->Debe dar: "Error: caracter no valido"
+
+4- Validación de números: Verificar en los parametros 2 y 3 que no se puedan ingresar numeros por fuera de la base establecida en el parametro 1. 
+Ej: ingresar 25 en el parametro 2 si en el parametro 1 tiene base 2.
+Ej: sumar(2,"211","10"); --> Debe dar como resultado: "Error: El caracter '2' excede al rango de valores establecido en la base"
+
+5- Validación de letras: Verificar en los parametros 2 y 3 que no se puedan ingresar letras por fuera de la base establecida en el parametro 1. 
+Ej ingresar la letra "a" en el parametro 2 o 3 si en el parametro 1 se ingreso 10.
+Ej: sumar(10,"a9","1a"); --> Debe dar "El caracter 'a' excede al rango de valores establecido en la base"
+
+6- Validación de mayusculas y minusculas: Verificar que las letras mayusculas y minusculas sean aceptadas haciendo pruebas cruzadas. El resultado siempre sera en minuscula.
+prueba 1 sumar(16,"Aa","1B"); --> Debe dar c5
+Prueba 2 sumar(16,"aA","1b"); --> Debe dar c5
+Prueba 3 sumar(16,"aa","1b"); --> Debe dar el mismo resultado que el anterior (c5)
+
+7- Numeros decimales: Verificar que no se pueden ingresar numeros decimales a ninguno de los 3 parametros.
+Ej sumar(2.5,"2.2","3") -->Debe dar: "Error: Ingrese un numero entero"
